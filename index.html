@@ -18,7 +18,7 @@
 <body>
     <nav>
         <div class="nav-brand">Fun With Triangles</div>
-        <a href="istriangle.html">isTriangle?</a>
+        <a href="index.html">isTriangle?</a>
         <a href="quiz.html">Triangle Quiz</a>
         <a href="hypotenuse.html">Hypotenuse</a>
         <a href="area.html">Area</a>
@@ -26,11 +26,11 @@
 
     <h1>Is Triangle?</h1>
     <label for ="angle1">angle1:</label>
-    <input class="angle-number"></input>
+    <input class="angle-number" type="number" min=0 oninput="validity.valid||(value='');"></input>
     <label for ="angle1">angle2:</label>
-    <input class="angle-number"> </input>
+    <input class="angle-number" type="number" min=0 oninput="validity.valid||(value='');"> </input>
     <label for ="angle1">angle3:</label>
-    <input class="angle-number"> </input>
+    <input class="angle-number" type="number" min=0 oninput="validity.valid||(value='');"> </input>
     <br>
     <button id="is-triangle-btn">Is Triangle?</button>
     <div id="output"></div>

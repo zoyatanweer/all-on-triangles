@@ -25,9 +25,9 @@
 
     <h1>Calculate Hypotenuse</h1>
     <label>a=</label>
-    <input class="side-input" type="number" />
+    <input class="side-input" type="number" min=0 oninput="validity.valid||(value='');" />
     <label>b=</label>
-    <input class="side-input" type="number" />
+    <input class="side-input" type="number" min=0 oninput="validity.valid||(value='');" />
     
     <button id="hypotenuse-btn">Calculate Hypotenuse</button>
     <div id="output"></div>

@@ -15,6 +15,11 @@ function isTriangle(){
         Number(inputs[2].value) 
     ) 
     if(sumOfAngles!=""){
+        if( (Number(inputs[0].value) ) && (Number(inputs[1].value) )===90 ||
+            (Number(inputs[1].value) ) && (Number(inputs[2].value))===90 ||
+            (Number(inputs[2].value) ) && (Number(inputs[0].value)) ===90 ){
+            outputEl.innerText = "The angles don't form a triangle."
+        }
         if(sumOfAngles===180){
             outputEl.innerText = "The angles form a triangle !"
         }else{
