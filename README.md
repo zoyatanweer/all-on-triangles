@@ -9,3 +9,5 @@ A triangles app consisting of four sections.
 **hypotenuse:** Input the values of the sides of triangle and get its hypotenuse.
 
 **area:** Input the values of the sides of triangle and get its area.
+
+Tech used: HTML, CSS and JavaScript.
