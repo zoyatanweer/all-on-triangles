@@ -20,7 +20,7 @@ function isTriangle(){
             (Number(inputs[2].value) ) && (Number(inputs[0].value)) ===90 ){
             outputEl.innerText = "The angles don't form a triangle."
         }
-        if(sumOfAngles===180){
+        else if(sumOfAngles===180){
             outputEl.innerText = "The angles form a triangle !"
         }else{
             outputEl.innerText = "Sorry, the angles don't form a triangle."
