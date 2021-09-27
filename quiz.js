@@ -13,8 +13,13 @@ function calculateScore(){
             score++;
         }
         index++;
+    }if(index===10){
+        for(var i = 0; i<index ; i++){
+            outputEl.innerText = "Your score is " + score;   
+        }
+    }else{
+        outputEl.innerText = "Please attempt all the questions";
     }
-    outputEl.innerText = "Your score is " + score;   
 }
 
 submitAnswerBtn.addEventListener("click", calculateScore)
