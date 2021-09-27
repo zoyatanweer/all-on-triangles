@@ -14,17 +14,17 @@ function isTriangle(){
         Number(inputs[1].value),
         Number(inputs[2].value) 
     ) 
-    if(sumOfAngles!=""){ 
-        if(sumOfAngles===180 && inputs[0].value>0 && inputs[1].value>0 && inputs[2].value>0){
-            outputEl.innerText = "The angles form a triangle !"
-            }
-            else {
-            outputEl.innerText = "The angles dont form a triangle"
-            }
-    } else{
-        outputEl.innerText ="Please enter all the values";
-    }  
-} 
+    if(inputs[0].value=="" || inputs[1].value=="" || inputs[2].value=="")
+    {
+        outputEl.innerText = "Please enter all the values";
+    }
+    else if(sumOfAngles===180 && inputs[0].value>0 && inputs[1].value>0 && inputs[2].value>0)
+    {
+        outputEl.innerText = "The angles form a triangle !"
+    }
+    else outputEl.innerText = "The angles dont form a triangle"
+
+}
 
 
 isTriangleBtn.addEventListener("click", isTriangle);

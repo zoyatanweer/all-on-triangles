@@ -6,14 +6,15 @@ function calculateSumOfSquares(a,b){
     const sumOfSquares = a*a + b*b;
     return sumOfSquares;
 }
+
 function calculateHypotenuse(){
     const sumOfSquares = calculateSumOfSquares(
         Number(sides[0].value),
         Number(sides[1].value)
         );
-
-        if(sumOfSquares==""){ 
-           outputEl.innerText ="Please enter all the values";
+        if(sides[0].value=="" || sides[1].value=="")
+        {
+        outputEl.innerText = "Please enter all the values";
         }
         else{
             const lengthOfHypotenuse = parseFloat (Math.sqrt(sumOfSquares)).toFixed(2);

@@ -13,7 +13,7 @@ function areaTriangle(){
         Number(inputs[0].value),
         Number(inputs[1].value)
     ) 
-    if(area==""){
+    if(inputs[0].value==""|| inputs[1].value==""){
         outputEl.innerText = "Please enter all the values";
     }
     else{
