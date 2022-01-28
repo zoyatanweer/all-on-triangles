@@ -2,12 +2,12 @@ const sides = document.querySelectorAll(".side-input");
 const hypotenuseBtn = document.querySelector("#hypotenuse-btn");
 const outputEl = document.querySelector("#output");
 
-function calculateSumOfSquares(a,b){
+const calculateSumOfSquares = (a,b) => {
     const sumOfSquares = a*a + b*b;
     return sumOfSquares;
 }
 
-function calculateHypotenuse(){
+const calculateHypotenuse = () => {
     const sumOfSquares = calculateSumOfSquares(
         Number(sides[0].value),
         Number(sides[1].value)

@@ -3,12 +3,12 @@ const areaBtn = document.querySelector("#area-btn");
 
 const outputEl = document.querySelector("#output")
 
-function areaOfTriangle(base, height){
+const areaOfTriangle = (base, height) => {
     const area = 0.5 * base * height;
     return area;
 }
 
-function areaTriangle(){
+const areaTriangle = () => {
     const area = areaOfTriangle(
         Number(inputs[0].value),
         Number(inputs[1].value)
